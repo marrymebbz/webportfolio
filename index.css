@@ -258,6 +258,10 @@ textarea, input
     background-color: rgba(0,0,0,.03);
     border-top: 1px solid rgba(0,0,0,.125);
 }
+.maps
+{
+    border: 0;
+}
 
 /* Footer */
 footer
