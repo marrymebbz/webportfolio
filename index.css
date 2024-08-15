@@ -1,0 +1,272 @@
+/* Global Styles */
+.bg-blue
+{
+    background-color: #000062 !important;
+}
+.bg-red
+{
+    background-color: #DF265E !important;
+}
+.bg-green
+{
+    background-color: #00c96e !important;
+}
+.font-16
+{
+    font-size: 16px;
+}
+.font-20
+{
+    font-size: 20px;
+}
+.border-blue
+{
+    border: 2px solid #000062 !important;
+}
+.border-green
+{
+    border: 2px solid #00c96e !important;
+}
+.text-blue
+{
+    color: #000062;
+}
+
+/* Header */
+#logo
+{
+    width: 48.63px;
+    height: auto;
+}
+
+.navbar
+{
+    background-color: #000062;
+}
+.navbar button,
+.navbar-light .navbar-toggler
+{
+    background: #fff;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
+#navbarNavAltMarkup a
+{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Body */
+#base
+{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;    
+    padding: 12px 32px 12px 32px;   
+    border-radius: 999px;
+    background: #DF265E;
+    color: #fff;
+}
+
+#landing h1
+{
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #00c96e;
+}
+#landing h2
+{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+}
+
+#landing p
+{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+}
+
+#landing
+{
+    background: linear-gradient(rgba(0, 0, 98, 0.9), rgba(223, 38, 94, 0.4)), url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about
+{
+    background: white;
+}
+
+#text-title
+{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    text-align: left;
+    color: #000062;
+}
+
+#about p
+{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+    color: #000062;
+}
+
+#projects h3
+{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    text-align: center;
+    color: #df265e;
+}
+
+#projects img
+{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: .25rem;
+}
+
+#p
+{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: center;
+    color: #000062;
+}
+
+#tools h3
+{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    text-align: center;
+    color: #fff;
+}
+
+#tools img
+{
+    width: 8em;
+    height: auto;
+}
+
+#contact h3
+{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    color: #df265e;
+}
+
+#contact p
+{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    color: #000062;
+}
+
+#contact label
+{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    color: #000062;
+}
+
+#contact placeholder
+{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: left;
+    color: #000062;
+}
+
+#contact .icon1,
+#contact .icon2
+{
+    transform: scale(1.5);
+}
+
+#contact .icon3
+{
+    transform: scale(1.9);
+}
+
+button
+{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    padding: 12px 32px 12px 32px;
+    gap: 8px;
+    border-radius: 999px;
+    background: #df265e;
+    color: #fff;
+}
+
+textarea, input
+{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: left;
+    color: #000062;
+}
+
+.card-header
+{
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+/* Footer */
+footer
+{
+    background: #000062;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: rgba(255, 242, 228, 1);
+}
