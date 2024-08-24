@@ -1,4 +1,8 @@
 /* Global Styles */
+body
+{
+    font-family: Montserrat;
+}
 .bg-blue
 {
     background-color: #000062 !important;
@@ -10,7 +14,7 @@
 .bg-green
 {
     background-color: #00c96e !important;
-}
+}   
 .font-16
 {
     font-size: 16px;
@@ -54,10 +58,9 @@
 
 #navbarNavAltMarkup a
 {
-    font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
-    line-height: 21.94px;
+    line-height: 1.2em;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -66,10 +69,9 @@
 /* Body */
 #base
 {
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.2em;
     text-align: center;    
     padding: 12px 32px 12px 32px;   
     border-radius: 999px;
@@ -79,28 +81,25 @@
 
 #landing h1
 {
-    font-family: Poppins;
     font-size: 50px;
     font-weight: 600;
-    line-height: 72px;
+    line-height: 1.2em;
     letter-spacing: -0.02em;
     color: #00c96e;
 }
 #landing h2
 {
-    font-family: Poppins;
     font-size: 30px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.2em;
     color: #fff;
 }
 
 #landing p
 {
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.2em;
     color: #fff;
 }
 
@@ -109,6 +108,7 @@
     background: linear-gradient(rgba(0, 0, 98, 0.9), rgba(223, 38, 94, 0.4)), url("./images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #about
@@ -118,30 +118,27 @@
 
 #text-title
 {
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
-    line-height: 48.76px;
+    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
 
 #about p
 {
-    font-family: Poppins;
     font-size: 24px;
     font-weight: 400;
-    line-height: 29.26px;
+    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
 
 #projects h3
 {
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
-    line-height: 48.76px;
+    line-height: 1.2em;
     text-align: center;
     color: #df265e;
 }
@@ -156,20 +153,27 @@
 
 #p
 {
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 400;
-    line-height: 29.26px;
+    line-height: 1.2em;
     text-align: center;
     color: #000062;
 }
 
+.card p
+{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+    color: #fff;
+}
+
 #tools h3
 {
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
-    line-height: 48.76px;
+    line-height: 1.2em;
     text-align: center;
     color: #fff;
 }
@@ -182,37 +186,33 @@
 
 #contact h3
 {
-    font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
-    line-height: 48.76px;
+    line-height: 1.2em;
     color: #df265e;
 }
 
 #contact p
 {
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29.26px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
     color: #000062;
 }
 
 #contact label
 {
-    font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 24.38px;
+    line-height: 1.2em;
     color: #000062;
 }
 
-#contact placeholder
+::placeholder
 {
-    font-family: Poppins;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 29.26px;
+    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
@@ -230,13 +230,11 @@
 
 button
 {
-    font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.2em;
     text-align: center;
     padding: 12px 32px 12px 32px;
-    gap: 8px;
     border-radius: 999px;
     background: #df265e;
     color: #fff;
@@ -244,10 +242,9 @@ button
 
 textarea, input
 {
-    font-family: Poppins;
     font-size: 24px;
     font-weight: 600;
-    line-height: 29.26px;
+    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
@@ -267,10 +264,9 @@ textarea, input
 footer
 {
     background: #000062;
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
-    line-height: 19.5px;
+    line-height: 1.2em;
     text-align: center;
     color: rgba(255, 242, 228, 1);
 }
