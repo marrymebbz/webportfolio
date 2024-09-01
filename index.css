@@ -1,7 +1,47 @@
 /* Global Styles */
-body
+body,
+html
 {
-    font-family: Montserrat;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Gotu", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #000062;
+}
+.transition-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1dba6e;
+    z-index: 9999;
+    transition: opacity 5s ease;
+}
+.transition-wrapper
+{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.transition-wrapper img
+{
+    width: 10%;
+    height: auto;
+}
+.transition-wrapper.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+.homepage-content {
+    display: none;
+    opacity: 0;
+}
+.homepage-content.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease;
 }
 .bg-blue
 {
@@ -23,17 +63,33 @@ body
 {
     font-size: 20px;
 }
+.font-25
+{
+    font-size: 25px;
+}
 .border-blue
 {
-    border: 2px solid #000062 !important;
+    border: 1px solid #000062;
+}
+.bg-red
+{
+    border-color: #DF265E !important;
+}
+.border-gray
+{
+    border: 1px solid rgb(255,255,255,0.3);
 }
 .border-green
 {
-    border: 2px solid #00c96e !important;
+    border: 1px solid #00c96e;
 }
 .text-blue
 {
     color: #000062;
+}
+.text-green
+{
+    color: #00c96e;
 }
 
 /* Header */
@@ -72,32 +128,34 @@ body
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2em;
-    text-align: center;    
-    padding: 12px 32px 12px 32px;   
-    border-radius: 999px;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 3px;
     background: #DF265E;
     color: #fff;
+    text-transform: uppercase;
 }
 
 #landing h1
 {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 1.2em;
-    letter-spacing: -0.02em;
     color: #00c96e;
+    font-family: "Aboreto", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
 }
 #landing h2
 {
-    font-size: 30px;
     font-weight: 600;
     line-height: 1.2em;
     color: #fff;
+    font-weight: 900;
+    font-style: normal;
 }
 
 #landing p
 {
-    font-size: 20px;
     font-weight: 400;
     line-height: 1.2em;
     color: #fff;
@@ -109,6 +167,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 90% 0% 100% 90%;
 }
 
 #about
@@ -118,7 +177,6 @@ body
 
 #text-title
 {
-    font-size: 40px;
     font-weight: 600;
     line-height: 1.2em;
     text-align: left;
@@ -127,7 +185,6 @@ body
 
 #about p
 {
-    font-size: 24px;
     font-weight: 400;
     line-height: 1.2em;
     text-align: left;
@@ -136,11 +193,7 @@ body
 
 #projects h3
 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.2em;
-    text-align: center;
-    color: #df265e;
+    font-family: "Aboreto", system-ui;
 }
 
 #projects img
@@ -153,29 +206,23 @@ body
 
 #p
 {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.2em;
-    text-align: center;
     color: #000062;
 }
 
 .card p
 {
-    font-size: 20px;
     font-weight: 400;
-    line-height: 1.2em;
     text-align: center;
     color: #fff;
 }
 
 #tools h3
 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.2em;
     text-align: center;
     color: #fff;
+    font-family: "Aboreto", system-ui;
+    font-weight: 800;
+    font-style: normal;
 }
 
 #tools img
@@ -186,33 +233,23 @@ body
 
 #contact h3
 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.2em;
-    color: #df265e;
+    font-family: "Aboreto", system-ui;
 }
 
 #contact p
 {
-    font-size: 20px;
     font-weight: 500;
-    line-height: 1.2em;
-    color: #000062;
 }
 
 #contact label
 {
-    font-size: 18px;
     font-weight: 600;
-    line-height: 1.2em;
     color: #000062;
 }
 
 ::placeholder
 {
-    font-size: 18px;
     font-weight: 600;
-    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
@@ -220,31 +257,28 @@ body
 #contact .icon1,
 #contact .icon2
 {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 #contact .icon3
 {
-    transform: scale(1.9);
+    transform: scale(1.5);
 }
 
 button
 {
-    font-size: 18px;
     font-weight: 600;
-    line-height: 1.2em;
     text-align: center;
-    padding: 12px 32px 12px 32px;
-    border-radius: 999px;
-    background: #df265e;
+    padding: 10px 50px;
+    border-radius: 3px;
+    background: #DF265E;
     color: #fff;
+    text-transform: uppercase;
 }
 
 textarea, input
 {
-    font-size: 24px;
     font-weight: 600;
-    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
@@ -258,15 +292,4 @@ textarea, input
 .maps
 {
     border: 0;
-}
-
-/* Footer */
-footer
-{
-    background: #000062;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2em;
-    text-align: center;
-    color: rgba(255, 242, 228, 1);
 }
