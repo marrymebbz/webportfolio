@@ -1,4 +1,12 @@
 /* Global Styles */
+:root
+{
+    --red: #DF265;
+    --blue: #000062;
+    --green: #1dba6e;
+    --white: #fff
+    --black: #000;
+}
 body,
 html
 {
@@ -9,6 +17,27 @@ html
     scroll-behavior: smooth;
     background-color: #000062;
 }
+
+@keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.block {
+    animation: zoomIn 0.8s ease-out;
+}   
+    @media only screen and (max-width: 600px) 
+    {
+        .block {
+            animation: none;
+        }
+    }
 .transition-wrapper {
     position: fixed;
     top: 0;
@@ -55,18 +84,6 @@ html
 {
     background-color: #00c96e !important;
 }   
-.font-16
-{
-    font-size: 16px;
-}
-.font-20
-{
-    font-size: 20px;
-}
-.font-25
-{
-    font-size: 25px;
-}
 .border-blue
 {
     border: 1px solid #000062;
@@ -87,9 +104,17 @@ html
 {
     color: #000062;
 }
-.text-green
+.text-green, .text-green:hover
 {
     color: #00c96e;
+}
+.text-red
+{
+    color: #DF265E;
+}
+.btn-outline-green
+{
+    border: 1px solid #00c96e;
 }
 
 /* Header */
@@ -103,6 +128,10 @@ html
 {
     background-color: #000062;
 }
+#navbarNavAltMarkup a:hover
+{
+    color: #00c96e;
+}
 .navbar button,
 .navbar-light .navbar-toggler
 {
@@ -114,28 +143,13 @@ html
 
 #navbarNavAltMarkup a
 {
-    font-size: 18px;
     font-weight: 500;
-    line-height: 1.2em;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
 
 /* Body */
-#base
-{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2em;
-    text-align: center;
-    padding: 15px 30px;
-    border-radius: 3px;
-    background: #DF265E;
-    color: #fff;
-    text-transform: uppercase;
-}
-
 #landing h1
 {
     color: #00c96e;
@@ -148,7 +162,6 @@ html
 #landing h2
 {
     font-weight: 600;
-    line-height: 1.2em;
     color: #fff;
     font-weight: 900;
     font-style: normal;
@@ -157,36 +170,22 @@ html
 #landing p
 {
     font-weight: 400;
-    line-height: 1.2em;
     color: #fff;
 }
 
 #landing
 {
+    background: linear-gradient(rgba(0, 0, 98, 0.9), rgba(16, 15, 15, 0.4));
     background: linear-gradient(rgba(0, 0, 98, 0.9), rgba(223, 38, 94, 0.4)), url("./images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 90% 0% 100% 90%;
 }
 
-#about
-{
-    background: white;
-}
 
 #text-title
 {
     font-weight: 600;
-    line-height: 1.2em;
-    text-align: left;
-    color: #000062;
-}
-
-#about p
-{
-    font-weight: 400;
-    line-height: 1.2em;
     text-align: left;
     color: #000062;
 }
@@ -292,4 +291,9 @@ textarea, input
 .maps
 {
     border: 0;
+}
+#tools img
+{
+    height: 100px;
+    width: auto;
 }
